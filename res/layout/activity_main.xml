@@ -1,0 +1,99 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="22dp"
+        android:text="ステータス" />
+
+    <Button
+        android:id="@+id/rec_start_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/textView"
+        android:layout_marginTop="146dp"
+        android:text="再生" />
+
+    <Button
+        android:id="@+id/photo_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/rec_start_btn"
+        android:layout_marginTop="57dp"
+        android:text="写真撮影" />
+
+    <Button
+        android:id="@+id/rec_stop_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/rec_start_btn"
+        android:layout_alignBottom="@+id/rec_start_btn"
+        android:layout_alignParentRight="true"
+        android:text="停止" />
+
+    <Button
+        android:id="@+id/start_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/rec_stop_btn"
+        android:layout_alignParentLeft="true"
+        android:layout_marginBottom="24dp"
+        android:text="録音開始" />
+
+    <Button
+        android:id="@+id/end_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/start_btn"
+        android:layout_alignBottom="@+id/start_btn"
+        android:layout_alignParentRight="true"
+        android:text="録音終了" />
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/rec_start_btn"
+        android:layout_alignParentLeft="true"
+        android:text="方位　：　" />
+
+    <TextView
+        android:id="@+id/angle_txt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/textView1"
+        android:layout_toRightOf="@+id/textView1"
+        android:text="TextView" />
+
+    <Button
+        android:id="@+id/angle_photo_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/photo_btn"
+        android:layout_alignBottom="@+id/photo_btn"
+        android:layout_alignParentRight="true"
+        android:text="角度による撮影" />
+
+    <Button
+        android:id="@+id/all_start_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:text="すべて開始" />
+
+    <Button
+        android:id="@+id/all_stop_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:text="すべて終了" />
+
+</RelativeLayout>
